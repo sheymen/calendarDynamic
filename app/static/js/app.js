@@ -82,13 +82,16 @@
 					}
 					lastHour = due_at
 
+					// $(".schedule-container .column-day:eq("+0+")").append(hour_element);
 					// obtener dia y ordenar en base a esto
-					for (var x = 1;x<7;x++) {
+					for (var x = 0;x<7;x++) {
 						var day = moment(Schedule.start).add(x,'days');
 						dayM = day.format("DD");
 						if(parseInt(dayHour) == parseInt(dayM)){
-								colum = x-1
+								colum = x
 								$(".schedule-container .column-day:eq("+colum+")").append(hour_element);
+						}else{
+							console.log('error');
 						}
 
 					}
