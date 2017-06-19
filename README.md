@@ -10,7 +10,7 @@ We also want to understand how talented are you figuring out the best possible s
 Install all dependencies on the requirement.txt file
 
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 ## How to run
