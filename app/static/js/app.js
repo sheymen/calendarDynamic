@@ -85,14 +85,21 @@
 					// $(".schedule-container .column-day:eq("+0+")").append(hour_element);
 					// obtener dia y ordenar en base a esto
 					for (var x = 0;x<7;x++) {
+						console.log(x);
 						var day = moment(Schedule.start).add(x,'days');
+
 						dayM = day.format("DD");
+						dayM = dayM -3
+						console.log(dayHour);
+						console.log(dayM);
 						if(parseInt(dayHour) == parseInt(dayM)){
+								console.log('es aca  :D');
 								colum = x
 								$(".schedule-container .column-day:eq("+colum+")").append(hour_element);
 						}else{
 							console.log('error');
 						}
+
 
 					}
 
